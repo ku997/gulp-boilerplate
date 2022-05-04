@@ -1,0 +1,164 @@
+.contacts {
+  background-color: #000;
+  min-height: calc(100vh - 185px);
+  height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 90px 90px 90px 180px;
+}
+.contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.contacts__left {
+  margin-right: 25px;
+}
+.contacts .h1 {
+  margin-bottom: 60px;
+}
+.contacts__requisites {
+  margin-bottom: 60px;
+  margin-right: 220px;
+}
+.contacts__requisites p {
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contacts__requisites p:first-child {
+  margin-top: 0;
+  color: #ff2747;
+}
+.contacts__requisites p:last-child {
+  margin-bottom: 0;
+}
+.contacts__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contacts__contact-text {
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ff2747;
+  margin: 0;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.contacts__contact-image {
+  width: 100%;
+}
+.contacts__contact-image img {
+  width: 100%;
+}
+.contacts__block {
+  padding: 40px 70px;
+  border: 1px solid #ff2747;
+  border-radius: 0 40px 40px 0;
+}
+.contacts__block-title {
+  margin-top: 0;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.contacts__block-contact {
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.contacts__block-contact-title {
+  display: inline;
+  margin: 0;
+  color: #ff2747;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+.contacts__block-contact-link {
+  display: inline;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+.contacts__block-contact-link:hover {
+  text-decoration: underline;
+}
+.contacts__block-contact:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1500px) {
+  .contacts {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contacts {
+    min-height: calc(100vh - 120px);
+  }
+  .contacts__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contacts__left {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .contacts__requisites {
+    margin-right: 0;
+  }
+  .contacts__contact-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contacts {
+    padding: 25px 15px;
+    min-height: calc(100vh - 100px);
+  }
+  .contacts .h1 {
+    margin-bottom: 25px;
+  }
+  .contacts__requisites {
+    margin-bottom: 25px;
+  }
+  .contacts__requisites p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts__contact-text, .contacts__block-contact-title, .contacts__block-contact-link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts__right {
+    width: 100%;
+  }
+  .contacts__block {
+    padding: 20px;
+    width: 100%;
+    border-radius: 0 40px 40px 0;
+  }
+}

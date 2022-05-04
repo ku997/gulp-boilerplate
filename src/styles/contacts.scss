@@ -1,0 +1,146 @@
+.contacts {
+  background-color: #000;
+  min-height: calc(100vh - 185px);
+  height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 90px 90px 90px 180px;
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__left {
+    margin-right: 25px;
+  }
+  .h1 {
+    margin-bottom: 60px;
+  }
+  &__requisites {
+    margin-bottom: 60px;
+    margin-right: 220px;
+    p {
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #ffffff;
+      &:first-child {
+        margin-top: 0;
+        color: #ff2747;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    &-text {
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #ff2747;
+      margin: 0;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    &-image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__block {
+    padding: 40px 70px;
+    border: 1px solid #ff2747;
+    border-radius: 0 40px 40px 0;
+    &-title {
+      margin-top: 0;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    &-contact {
+      white-space: nowrap;
+      &-title {
+        display: inline;
+        margin: 0;
+        color: #ff2747;
+        font-family: "Myriad Pro";
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 21px;
+      }
+      &-link {
+        display: inline;
+        margin: 0;
+        color: #ffffff;
+        font-family: "Myriad Pro";
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 21px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    padding: 40px;
+  }
+  @media screen and (max-width: 1024px) {
+    min-height: calc(100vh - 120px);
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__left {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    &__requisites {
+      margin-right: 0;
+    }
+    &__contact {
+      &-image {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    padding: 25px 15px;
+    min-height: calc(100vh - 100px);
+    .h1 {
+      margin-bottom: 25px;
+    }
+    &__requisites {
+      margin-bottom: 25px;
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &__contact-text,
+    &__block-contact-title,
+    &__block-contact-link {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__block {
+      padding: 20px;
+      width: 100%;
+      border-radius: 0 40px 40px 0;
+    }
+  }
+}
