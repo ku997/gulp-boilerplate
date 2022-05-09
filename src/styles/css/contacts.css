@@ -105,6 +105,10 @@
 .contacts__block-contact:last-child {
   margin-bottom: 0;
 }
+.contacts .services__contacts {
+  margin-bottom: 0 !important;
+  margin-top: 40px;
+}
 @media screen and (max-width: 1500px) {
   .contacts {
     padding: 40px;

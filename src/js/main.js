@@ -1,4 +1,11 @@
-import barba from "@barba/core";
+function smoothScroll() {
+  if (location.hash && document.getElementById(location.hash.substr(1))) {
+    document.getElementById(location.hash.substr(1)).scrollIntoView({
+      block: "start",
+    });
+  }
+}
+
 function initHomeSlider() {
   new Swiper(".content__slider", {
     direction: "horizontal",
@@ -417,4 +424,7 @@ barba.init({
 
 barba.hooks.afterEnter(() => {
   init();
+});
+barba.hooks.enter(() => {
+  smoothScroll();
 });
